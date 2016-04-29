@@ -36,6 +36,8 @@ end
 combine
 end
 
+print hash 
+
 # 2. Write a program that prints the numbers from 1 to 100, except:
 
 # for multiples of three print "Fizz" instead of the number
@@ -43,12 +45,16 @@ end
 # Print "FizzBuzz" for numbers that are multiples of both 3 and 5.
 
 # The for loop allows ruby to evaluate a series of numbers. It says that, for a list of numbers 1-100, look for multiples of three and five, with no remainders. For multiples of both 3 and 5, output "FizzBuzz." For multiples of just 3, output "Fizz." For multiples of just 5, output "Buzz."
-for i in 1..100
-	if i%3 == 0 && i%5 == 0
-		puts "FizzBuzz"
-	elsif i%3 == 0
-		puts "Fizz"
-	elsif i%5 == 0
-		puts puts "Buzz"
-	end
+
+def FizzBuzz
+		for i in 1..100
+			if i%3 == 0 && i%5 == 0
+				puts "FizzBuzz"
+			elsif i%3 == 0
+				puts "Fizz"
+			elsif i%5 == 0
+				puts puts "Buzz"
+			else puts i
+			end
+		end
 end
