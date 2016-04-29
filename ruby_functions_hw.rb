@@ -1,5 +1,7 @@
 # Ruby Functions Homework
 
+x = "There are more deaths from guns than sharks."
+puts x + " Only in America!"
 
 array = [3,6,20,17]
 
