@@ -33,10 +33,10 @@ def combine(type,os)
 	index += 1
 end
 
-combine
+puts hash
 end
 
-print hash 
+
 
 # 2. Write a program that prints the numbers from 1 to 100, except:
 

@@ -46,23 +46,24 @@ class Elevator
 		end
 
 		# In a four level building, on each floor the elevator moves up.
-		def move_up
-			for i in 0..3
-			@floor.each += 1
+		def move_up (n)
+			for i in 0...n
+				@floor += 1
+				puts "You are on floor #{@floor}"
 			end
 		end
 
 		# In a four level building, on each floor the elevator moves down.
-		def move_down
-			for i in 0..3
-			@floor -= 1
+		def move_down (n)
+			for i in 0...n
+				@floor -= 1
+				puts "You are on floor #{@floor}"
 			end
 		end
 
-		# The elevator greets the rider when it stops on each floor.
-		def greets(floor)
-			@floor.each
-			puts "What floor would you like to go to?"
+		# The elevator greets the rider and tells them what floor they're on
+		def greets
+			puts "You are on floor #{@floor}"
 		end
 
 end
