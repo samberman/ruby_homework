@@ -32,9 +32,28 @@ def combine(type,os)
 	hash[x] = os[index]
 	index += 1
 end
-
 puts hash
 end
+combine(type,os)
+
+# type = [:mac,:pc]
+# os = ["OS X","Windows"]
+
+
+# def combine(type,os)
+# 	hash = {}
+# 	index = 0
+# 	type.each_with_index do |name, index|
+# 	# hash[x] = os[index]
+# 	hash[type[index]] = [os[index]]
+# 	index += 1
+# end
+# 	puts hash
+# end
+# combine
+
+
+
 
 
 
