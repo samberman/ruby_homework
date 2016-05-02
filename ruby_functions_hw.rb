@@ -1,7 +1,11 @@
 # Ruby Functions Homework
 
-x = "There are more deaths from guns than sharks."
-puts x + " Only in America!"
+	x = "There are more deaths from guns than sharks."
+	y = puts x + " Only in America!"
+def add_string(x)
+	'x + y'
+end
+add_string(x,y)
 
 array = [3,6,20,17]
 
